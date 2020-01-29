@@ -1,0 +1,37 @@
+
+<div class="ui container">
+    <div class="ui ">
+        <a href="/" class="ui primary button" style="padding: 10px; margin:20px;" >Back To Search</a>
+    </div>
+        {{#if error}}
+        <p>{{error}}</p>
+        {{else}}
+            {{!-- <div class="ui segment"> --}}
+                
+                    <iframe style="width: 100%; height:400px" src="https://www.youtube.com/embed/{{meta.id}}" allowfullscreen></iframe>
+                
+            {{!-- </div> --}}
+
+            <div class="ui" style="margin: 20px; padding: 10px">
+                <p style="text-align: center;">Download Links</p>
+            </div>
+
+
+            <div class="ui horizontal list" style="text-align: center;">
+                <br>
+                {{#each meta.formats}}
+                
+                <div class="item ui segment" style="padding: 10px; margin: 10px; width:20% ;height:10%; text-align:justify">
+                <div class="content">
+                    <a href="{{url}}" style="font-size: 12px">{{format_note}}
+                        <div class="header">Ext: {{ext}} | Size: {{filesize}}</div>
+                    </a>
+                </div>
+                </div>
+                {{/each}}
+                <br>
+            </div>
+
+
+        {{/if}}
+</div>

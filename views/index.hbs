@@ -1,0 +1,25 @@
+
+<div class="ui container" style="align-self: auto; align-items:center;  margin-top:300px;">
+    {{!-- search_bar --}}
+    <div class="search-bar ui" style="text-align: center;">
+        <form class="ui form" name="youtube-download" method="post" action='/video'>
+        <div className="field">
+            <label style="text-align: center;">Video Search</label>
+            <br>
+            <br>
+            <input
+              type="url" 
+              name="url" 
+              placeholder="https://www.youtube.com/watch?v=kQW81ty6QFg" 
+              required
+              {{!-- value={this.state.term} --}}
+              {{!-- onChange={this.onInputChange} --}}
+            />
+            <br>
+            <br>
+            <button type="submit" class="ui primary button">Get Links</button>
+        </div>
+        </form>
+    </div>
+</div>
+

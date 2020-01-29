@@ -1,0 +1,48 @@
+{{!-- <div class="ui container">
+
+    {{!-- video_detail,results_list --}}
+<div className="ui stackable grid">
+
+        {{!-- vide_details --}}
+    <div className="ten wide column">
+        
+        <div className="ui embed">
+            <iframe title="video player" src="https://www.youtube.com/embed/nouePnN1rY8" />
+        </div>
+
+        <div className="ui segment">
+            <h4 className="ui header">video title</h4>
+            <p>video description</p>
+        </div>
+        
+        {{!-- //video_down --}}
+        <div className="ui segment">
+            <h4 className="ui header">Download Video</h4>
+            <a href="/">Video Url</a>
+        </div>
+
+        {{!-- //audio_down --}}
+        <div className="ui segment">
+            <h4 className="ui header">Download Audio</h4>
+            <a href="/">Audio Url</a>
+        </div>
+        
+    </div>
+        
+        {{!-- vid_list --}}
+    <div className="six wide column">
+            <div onClick={() => onVideoSelect(video)} className="video-item item ui segment">
+            <img
+            alt={video.snippet.title}
+            className="ui image"
+            src={video.snippet.thumbnails.medium.url}
+            />
+            <div className="content">
+            <div className="header">{video.snippet.title}</div>
+            </div>
+            </div>
+            </div>
+    </div>
+      
+</div>
+</div> --}}
